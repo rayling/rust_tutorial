@@ -23,5 +23,4 @@ fn main() {
         matches.get_many("text").unwrap().cloned().collect();
     let omit_newline = matches.get_flag("omit_newline");
     print!("{}{}", text.join(" "), if omit_newline {""} else {"\n"});
-    //command for git commit
 }
